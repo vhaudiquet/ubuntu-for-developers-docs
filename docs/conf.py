@@ -1,4 +1,5 @@
 import datetime
+import os
 from docutils.parsers.rst import roles
 from sphinx.util.docutils import SphinxRole
 from docutils import nodes
@@ -249,7 +250,7 @@ intersphinx_mapping = {
 
 
 # Sitemap configuration
-html_baseurl = "https://documentation.ubuntu.com/ubuntu-for-developers/"
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "/")
 sitemap_url_scheme = "{link}"
 
 
