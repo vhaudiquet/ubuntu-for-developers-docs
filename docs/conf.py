@@ -216,7 +216,7 @@ html_js_files = ["js/bundle.js"]
 # If you are using the :manpage: role, set this variable to the URL for the version
 # that you want to link to:
 manpages_url = (
-    "https://manpages.ubuntu.com/manpages/plucky/en/man{section}/{page}.{section}.html"
+    "https://manpages.ubuntu.com/manpages/questing/en/man{section}/{page}.{section}.html"
 )
 
 ############################################################
