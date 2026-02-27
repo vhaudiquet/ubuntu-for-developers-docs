@@ -8,13 +8,13 @@ It can be made into different kinds of packages:
 
 ## Making a Debian/Ubuntu package
 
-There are two cases in which you may want to make a Debian package.
-The first one is for direct integration into the Debian and Ubuntu operating systems.
-That is a complicated process, and will need involvement from Debian Developers and/or Ubuntu core developers.
-Usually, it is not the upstream developer that makes a package for Debian/Ubuntu directly, unless they are a
-Debian/Ubuntu developer themselves.
+There are two cases in which you may want to make a Debian package:
 
-The second case is for distributing the Debian package out of your own channels: that could be a Personal Package Archive (PPA) or a direct download. The PPA is preferred as users will be able to add your PPA and receive automatic updates.
+Direct integration into the Debian and Ubuntu operating systems
+: This is a complex process that requires the involvement of Debian Developers or Ubuntu core developers. Usually, it is not the upstream developer who makes a package for Debian/Ubuntu directly, unless they are a Debian/Ubuntu developer themselves.
+
+Distributing the Debian package using your own channels
+: This can be a [Personal Package Archive (PPA)](https://documentation.ubuntu.com/project/how-ubuntu-is-made/concepts/glossary/#term-PPA) or a direct download. The PPA is preferred as users would be able to add your PPA to their package management system and receive automatic updates.
 
 ### Packaging
 
@@ -22,7 +22,7 @@ The second case is for distributing the Debian package out of your own channels:
 
 ### Building and distributing with a PPA
 
-In order to make a PPA and build your package inside, you can follow [Build packages in a PPA](https://documentation.ubuntu.com/project/contributors/bug-fix/build-packages-in-a-ppa/).
+To make a PPA and build your package inside, follow [Build packages in a PPA](https://documentation.ubuntu.com/project/contributors/bug-fix/build-packages-in-a-ppa/).
 
 Then, your users will be able to add your PPA to install your software:
 ```
@@ -34,14 +34,17 @@ It is usual to bundle those commands in an install script, so that users can dir
 
 ## Crafting a Snap package
 
-A tutorial for crafting a snap, featuring crafting a fully-functional snap of a Python application, is available in [Craft a snap](https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/). The Snapcraft documentation also includes information about every part of the crafting process.
+For a tutorial on crafting a fully-functional snap of a Python application, see [Craft a snap](https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/). The Snapcraft documentation also includes information about every part of the crafting process.
 
-For more generic information about snap packages, from a user perspective, the [Snap documentation](https://snapcraft.io/docs/) is available.
+For more generic information about snap packages, from a user perspective, see the [Snap documentation](https://snapcraft.io/docs/).
 
 ## Containerizing
 
-Docker is one of the most famous container runtimes, and their documentation includes resources on containerization:
+Docker is one of the most commonly used container runtimes, and their documentation includes resources on containerization:
 - [Docker workshop: containerize an application](https://docs.docker.com/get-started/workshop/02_our_app/)
 - [Docker concepts: building images](https://docs.docker.com/get-started/docker-concepts/building-images/)
 
-Canonical, the editor of Ubuntu, also has a tool to create production-grade container images: [Rockcraft](https://documentation.ubuntu.com/rockcraft/stable/). Rockcraft allows to make efficient container images, called *rocks*, which are based on Ubuntu, thus having the benefits of Ubuntu support, while being smaller in footprint than regular images. Tutorials on how to use Rockcraft are also available, see [Rockcraft Tutorial](https://documentation.ubuntu.com/rockcraft/latest/tutorial/#tutorial).
+Canonical, the creator of Ubuntu, also has a tool to create production-grade container images: [Rockcraft](https://documentation.ubuntu.com/rockcraft/stable/). Rockcraft allows to make efficient container images, called *rocks*, which are based on Ubuntu. This has the benefits of Ubuntu support, while being smaller in footprint than regular images.
+
+For guidance on how to use Rockcraft, see [Rockcraft tutorial](https://documentation.ubuntu.com/rockcraft/latest/tutorial/#tutorial).
+
