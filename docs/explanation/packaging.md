@@ -1,10 +1,22 @@
 # Packaging software
 
-In order to distribute an application, it will need to be **packaged**.
-It can be made into different kinds of packages:
+There are different ways to distribute an application. It is possible to directly send
+the source code to users, who will then have to build it themselves. It is also possible
+to give out precompiled binaries that the users will download, copy to the right place and use.
+Those methods are not very convenient. The best way to distribute an application is to have it
+**packaged**. This way, the package manager handles installation, so everything is transparent to
+the user (no additional work required), and it can also handle updates.
+
+An application can be made into different kinds of packages:
 - Operating system package, like Debian/Ubuntu `.deb` package
 - Universal package, for distribution across the whole Linux ecosystem, like snaps
 - OCI images, to be used in container format by a container runtime (e.g. cloud environments)
+
+| Packaging type    | Example format/tools | Target                       |
+|-------------------|----------------------|------------------------------|
+| OS package        | .deb                 | OS integration               |
+| Universal package | .snap                | Universal Linux distribution |
+| OCI image         | Docker               | Cloud deployment             |
 
 ## Making a Debian/Ubuntu package
 
