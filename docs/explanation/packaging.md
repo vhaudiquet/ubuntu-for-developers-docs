@@ -42,7 +42,6 @@ sudo add-apt-repository ppa:<user>/<ppa_name>
 sudo apt update
 sudo apt install <your-software>
 ```
-It is usual to bundle those commands in an install script, so that users can directly install without having to manually do this part.
 
 ## Crafting a Snap package
 
